@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Reports - Smart Personal Finance Tracker{% endblock %}
+
+{% block content %}
+<h1>Your Expenditure Reports</h1>
+<div>
+    <canvas id="expenditureChart"></canvas>
+</div>
+<script>
+    var ctx = document.getElementById('expenditureChart').getContext('2d');
+    var expenditureChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+            datasets: [{
+                label: 'Expenditure',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+{% endblock %}

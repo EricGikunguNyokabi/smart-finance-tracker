@@ -1,0 +1,36 @@
+<!-- /app/templates/auth/login.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2 class="text-center mt-5">Login to Your Account</h2>
+    <form method="POST" class="mt-4">
+        {{ form.hidden_tag() }}
+
+        {% include 'components/message.html' %}
+        
+        <!-- Email Field -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            {{ form.email(class="form-control", id="email", placeholder="Enter your email") }}
+        </div>
+        
+        <!-- Password Field -->
+        <div class="form-group">
+            <label for="password">Password</label>
+            {{ form.password(class="form-control", id="password", placeholder="Enter your password") }}
+        </div>
+        
+        <!-- Submit Button -->
+        <div class="form-group text-center mt-3">
+            {{ form.submit(class="btn btn-info w-50") }}
+        </div>
+        
+        <!-- Additional Links -->
+        <div class="form-group text-center mt-3">
+            <p>Don't have an account? <a href="{{ url_for('auth.register') }}">Register here</a></p>
+            <p><a href="{{ url_for('auth.request_otp') }}" class="text-muted">Forgot Password?</a></p>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,112 @@
+body {
+    /* background-color: rgba(0, 86, 179, 1) ; Example for blue */
+    background-color: rgba(75, 177, 78, .1);
+}
+ /* Custom styles for sticky footer */
+ html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 80vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+.content {
+    flex: 1; /* Take up remaining space */
+}
+
+
+/* index.html */
+.hover-effect {
+    transition: transform 0.4s; /* Animation */
+}
+
+.hover-effect:hover {
+    transform: scale(1.02); /* Zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* footer */
+footer {
+    padding-top: 50px;
+    background-color: rgba(75, 177, 78, .5); /* Use your desired background color */
+    color: rgb(20, 22, 117); /* Text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-nav a {
+    color: rgb(9, 12, 31);
+    text-decoration: none;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}
+
+.footer-social img {
+    width: 24px; /* Adjust icon size */
+    height: auto;
+}
+
+
+/* RGBA: rgba(0, 123, 255, 1) (Solid blue)
+RGBA (Darker): rgba(0, 86, 179, 1) (Darker blue) */
+/* 
+1. Blue
+
+Hex Code: #007BFF (or variations like #0056b3)
+
+Psychological Effect: Conveys trust, reliability, and professionalism.
+
+2. Green
+
+Hex Code: #28A745 (or variations like #4CAF50)
+
+Psychological Effect: Represents wealth, growth, and stability.
+
+3. White
+
+Hex Code: #FFFFFF
+
+Psychological Effect: Symbolizes cleanliness, simplicity, and clarity, enhancing readability.
+
+4. Light Gray
+
+Hex Code: #F8F9FA
+
+Psychological Effect: Offers a neutral background that allows other colors to stand out while maintaining a professional appearance.
+
+5. Soft Beige or Cream
+
+Hex Code: #F5F5DC
+
+Psychological Effect: Provides warmth and approachability, making the site feel welcoming.
+
+6. Navy Blue
+
+Hex Code: #001F3F
+
+Psychological Effect: Adds a sense of authority and sophistication, suitable for high-end financial services.
+
+7. Light Pastel Shades
+
+Hex Code: #E0F7FA (for a soft blue)
+
+Psychological Effect: Creates a calm and inviting atmosphere, ideal for user engagement. */
+
